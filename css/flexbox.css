@@ -1,0 +1,93 @@
+/* Cabeçalho */
+.cabecalho__container {
+    display: flex;;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed
+}
+
+.cabecalho__pesquisar__item {
+    display: none;
+}
+
+
+/* Aside */
+.menu__container {
+    position: fixed;
+    bottom: 0%;
+    height: 74px;
+    width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) {
+    display: none;
+}
+
+.menu__itens {
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+}
+
+
+/* Seçao superior */
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 1em;
+}
+
+
+/* Vídeo */
+.videos__item {
+    height: 303px;
+    width: 280px;
+    flex-grow: 1;
+}
+
+.videos__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em
+}
+
+.descricao-video {
+    margin-top: 1rem;
+    display: grid;
+    text-align: start;
+    gap: 10px 1rem;
+    grid-template-columns: auto 1fr;
+}
+
+.descricao-video img {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.descricao-video h3 {
+    grid-area: 1 / 2 / 2 / 3;
+    font-weight: 700;
+    color: #444
+}
+
+.descricao-video p {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Rodapé */
+.rodape__container {
+    display: flex;
+    flex-flow: column wrap;
+}
